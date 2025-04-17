@@ -1,0 +1,155 @@
+\documentclass[10pt,twoside]{report}
+\linespread{1.19} 
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{float}
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e} 
+\usepackage{tikz}
+\usetikzlibrary{shadings, patterns}
+\usepackage{enumitem}
+\usepackage{array}
+
+% Custom column types
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Left-aligned fixed width
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}   % Center-aligned fixed width
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}  % Right-aligned fixed width
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text width=3cm,text centered, draw=black, fill=blue!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text width=3cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{mux} = [rectangle,text width=0.1cm, draw=black, fill=black]
+\tikzstyle{arrow} = [thick, text width=3cm,text centered,->,>=stealth]
+
+\usepackage{listings} % for code insertion
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{
+
+% \textbf{DynoCharge Business Plan}
+
+{\huge \textbf{BUSSINESS PLAN}}\\
+\vspace{0.5cm}
+{
+\large
+{\huge\textbf{DynoCharge}}\\
+}\\
+\vspace{0.3cm}
+\vspace{0.5cm}
+\textbf{Victor Ezea}
+
+\vspace{0.6cm}
+\vspace{0.6cm}
+\textbf{Contact Information:} \\
+Victor Ezea \\
+ezeavictorchukwuebuka@gmail.com \\
++33758942230 \\
+4D Boulevard de la Gare, Boissy Saint Ledger, 94470, France
+}
+
+\date{10, March 2025}
+
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{gobble}
+\pagestyle{empty}
+\tableofcontents
+\clearpage
+\pagestyle{plain}
+
+\listoffigures
+\listoftables
+
+
+\pagenumbering{arabic}
+
+% Executive Summary
+\input{ExecutiveSummary}
+
+% Company Overview
+\input{CompanyOverview}
+
+% Problem and Solution
+\input{Problems&Solution}
+
+% Target Market
+\input{TargetMarket}
+
+% Market Size & Segments
+\input{MarketSize}
+
+% Competition
+\input{Competition}
+
+% Competitive Advantages
+\input{Competitive Advantages}
+
+% Product or Service Offerings
+\input{Product or Service Offerings}
+
+% Marketing Plan
+\input{Marketing Plan}
+
+% Timeline & Metrics
+\input{Timeline & Metrics}
+
+% Financial Forecasts
+\input{Financial Forecasts}
+
+% Financing
+\input{Financing}
+
+% Use of Funding
+\input{Use of Funding}
+
+% Financial Plan & Break-Even Analysis
+\input{Financial Plan & Break-Even Analysis}
+
+% Conclusion
+% \input{con}
+
+\end{document}
